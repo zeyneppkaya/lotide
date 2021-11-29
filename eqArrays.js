@@ -1,17 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === undefined && expected === undefined) {
-    console.log(undefined);
-  } else if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-  
-//assertEqual("Lighthouse Labs", "Bootcamp");
-//assertEqual(1, 1);
-
 const eqArrays = (arr1, arr2) => {
   if (arr1.length === arr2.length && arr1.length >= 1) {
     for (let i = 0; i < arr1.length; i++) {
