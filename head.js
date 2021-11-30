@@ -1,13 +1,11 @@
-
-const head = function(argumentOne, argumentTwo) {
-  if (argumentOne.length >= 1) {
-    return argumentOne[0];
-  } else if (argumentOne.length === 0) {
+const head = function(arg1, arg2) {
+  if (arg1.length >= 1) {
+    return arg1[0];
+  } else if (arg1.length === 0) {
     return undefined;
   } else {
-    return argumentOne;
+    return arg1;
   }
 };
-
 
 module.exports = head;

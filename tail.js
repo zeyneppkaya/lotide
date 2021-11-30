@@ -1,11 +1,11 @@
 const tail = function(argument) {
-  let arr = [];
+  let array = [];
   if (argument.length > 1) {
     for (let i = 1; i < argument.length; i++) {
-      arr.push(argument[i]);
+      array.push(argument[i]);
     }
   }
-  return arr;
+  return array;
 };
 
 //const words = ["Yo Yo", "Lighthouse", "Labs"];

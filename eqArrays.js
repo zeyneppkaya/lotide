@@ -1,14 +1,14 @@
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length === arr2.length && arr1.length >= 1) {
-    for (let i = 0; i < arr1.length; i++) {
-      if (arr1[i] !== arr2[i]) {
+const eqArrays = (array1, array2) => {
+  if (array1.length === array2.length && array1.length >= 1) {
+    for (let i = 0; i < array1.length; i++) {
+      if (array1[i] !== array2[i]) {
         return false;
-      } else if (i === arr1.length - 1 && arr1[arr1.length - 1] === arr2[arr2.length - 1]) {
+      } else if (i === array1.length - 1 && array1[array1.length - 1] === array2[array2.length - 1]) {
         return true;
       }
     }
   } else {
-    return true; 
+    return true;
   }
 };
 

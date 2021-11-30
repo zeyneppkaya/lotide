@@ -6,18 +6,19 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countOnly = function(allItems, itemsToCount) {
-  const results = {};
-  for (const item of allItems) {
-    if (itemsToCount[item]) {
-      if (results[item]) {
-        results[item] += 1;
+
+const countOnly = function(totalItems, countingItems) {
+  const obj = {};
+  for (const key of totalItems) {
+    if (countingItems[key]) {
+      if (obj[key]) {
+        obj[key] += 1;
       } else {
-        results[item] = 1;
+        obj[key] = 1;
       }
     }
   }
-  return results;
+  return obj;
 };
 
 const firstNames = [

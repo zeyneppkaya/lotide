@@ -6,21 +6,21 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const findKey = function(object, callback) {
-  for (let key in object) {
-    if (callback(object[key]))
+const findKey = function(obj, callback) {
+  for (let key in obj) {
+    if (callback(obj[key]))
       return key;
   }
 };
 
-console.log(findKey({
+/*console.log(findKey({
   "Blue Hill": { stars: 1 },
   "Akaleri": { stars: 3 },
   "noma": { stars: 2 },
   "elBulli": { stars: 3 },
   "Ora": { stars: 2 },
   "Akelarre": { stars: 3 }
-}, x => x.stars === 2));
+}, x => x.stars === 2));*/
 
 assertEqual(findKey({
   "Blue Hill": { stars: 1 },
